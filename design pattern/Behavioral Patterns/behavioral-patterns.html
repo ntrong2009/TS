@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Pattern</title>
+    <link rel="stylesheet" href="../../assets/style.css">
+</head>
+
+<body>
+    <button type="button" class="collapsible">
+        <h3>Observer Pattern</h3>
+    </button>
+    <div class="content">
+        <p>
+            Xác định mối quan hệ một-nhiều giữa các đối tượng sao cho khi một đối tượng thay đổi trạng thái, tất cả các
+            đối tượng phụ thuộc của nó được thông báo và cập nhật tự động.
+        </p>
+        <img src="../images/observer-pattern.gif" alt="">
+        <h4>Subject (Chủ thể)</h4>
+        <ul>
+            <li><b>Mô tả</b> : Đối tượng chứa trạng thái mà các đối tượng khác (Observer) theo dõi.</li>
+            <li>
+                <b>Nhiệm vụ</b>
+                <ul>
+                    <li>Quản lý danh sách các observers.</li>
+                    <li>Cung cấp phương thức để thêm hoặc xóa observers.</li>
+                    <li>Thông báo cho tất cả các observers khi có sự thay đổi trạng thái.</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Observer (Người quan sát)</h4>
+        <ul>
+            <li><b>Mô tả : </b> Đối tượng nhận thông báo khi trạng thái của Subject thay đổi.</li>
+            <li>
+                <b>Trách nhiệm :</b>
+                <ul>
+                    <li>Định nghĩa một giao diện hoặc phương thức cập nhật mà Subject có thể gọi khi trạng thái thay
+                        đổi.</li>
+                    <li>Thực hiện phương thức cập nhật để phản ứng lại thay đổi trong Subject.</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>ConcreteSubject (Chủ thể cụ thể)</h4>
+        <ul>
+            <li><b>Mô tả : </b> Một implementation cụ thể của Subject, giữ trạng thái cụ thể và thông báo cho observers
+                khi trạng thái thay đổi.</li>
+            <li>
+                <b>Trách nhiệm :</b>
+                <ul>
+                    <li>Lưu trữ trạng thái của nó.</li>
+                    <li>Thực hiện việc thông báo đến các observers.</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>ConcreteObserver (Người quan sát cụ thể)</h4>
+        <ul>
+            <li><b>Mô tả : </b> Một implementation cụ thể của Observer, cập nhật trạng thái của nó để phù hợp với
+                Subject.</li>
+            <li><b>Trách nhiệm : </b>
+                <ul>
+                    <li>Lưu trữ một tham chiếu tới Subject.</li>
+                    <li>Thực hiện phương thức cập nhật để phản ánh trạng thái mới của Subject.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script src="../../assets/script.js"></script>
+</body>
+
+</html>
