@@ -8,6 +8,7 @@
 body {
   margin: 0 10%;
   font-family: "source-serif-pro";
+  background-color: #555;
 }
 
 .collapsible {

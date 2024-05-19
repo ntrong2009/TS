@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strutural Pattern</title>
+    <link rel="stylesheet" href="../../assets/style.css">
+</head>
+
+<body>
+    <button type="button" class="collapsible">
+        <h3>Decorator Pattern</h3>
+    </button>
+    <div class="content">
+        <p>Decorater cho phép gắn thêm chức năng vào các đối tượng hiện có mà không làm thay đổi cấu trúc của chúng. Đây
+            là
+            một phương pháp linh hoạt để mở rộng chức năng của một đối tượng mà không cần sửa đổi lớp gốc.</p>
+        <img src="../images/decorator-pattern.gif" alt="">
+        <h4>Component (Thành phần)</h4>
+        <ul>
+            <li>Định nghĩa một interface hoặc lớp trừu tượng cho các đối tượng được mở rộng bằng các decorator.</li>
+            <li>Các decorator sẽ triển khai interface này hoặc mở rộng từ lớp này.</li>
+        </ul>
+
+        <h4>Concrete Component (Thành phần cụ thể)</h4>
+        <ul>
+            <li>Định nghĩa một lớp cơ sở cho các đối tượng mà chúng ta muốn mở rộng hoặc gắn thêm chức năng.</li>
+            <li>Là lớp gốc mà các decorator sẽ mở rộng.</li>
+        </ul>
+
+        <h4>Decorator (Trang trí viên)</h4>
+        <ul>
+            <li>Định nghĩa một interface hoặc lớp trừu tượng tương tự như Component để đảm bảo rằng các decorator có thể
+                thay thế cho Component gốc.</li>
+            <li>Bao gồm một tham chiếu đến Component.</li>
+        </ul>
+
+        <h4>Concrete Decorator (Trang trí viên cụ thể)</h4>
+        <ul>
+            <li>Mở rộng hoặc thực hiện lại Decorator.</li>
+            <li>Thêm chức năng mới vào đối tượng bằng cách gọi phương thức của Component gốc và thêm chức năng mới sau
+                đó.</li>
+        </ul>
+    </div>
+
+    <script src="../../assets/script.js"></script>
+</body>
+
+</html>
