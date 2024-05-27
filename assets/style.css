@@ -23,16 +23,57 @@ body {
   font-size: 12px;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-50 {
+  flex: 50%;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
 .active,
 .collapsible:hover {
   background-color: #555;
 }
 
 .content {
-  padding: 0 18px;
+  padding: 0 20px;
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+}
+
+.content .box-item {
+  background-color: #ffffff;
+  padding: 20px;
 }
 
 .custom-table {
@@ -41,7 +82,8 @@ body {
   font-size: 0.9em;
   width: 100%;
   overflow: hidden;
-  box-shadow: rgba(39, 121, 52, 0.3) 0px 1px 2px 0px, rgba(29, 100, 35, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(39, 121, 52, 0.3) 0px 1px 2px 0px,
+    rgba(29, 100, 35, 0.15) 0px 1px 3px 1px;
 }
 .custom-table thead tr {
   background-color: #009879;
@@ -49,7 +91,8 @@ body {
   text-align: left;
   font-weight: bold;
 }
-.custom-table th, .custom-table td {
+.custom-table th,
+.custom-table td {
   padding: 12px 15px;
 }
 .custom-table tbody tr {

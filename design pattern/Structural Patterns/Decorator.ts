@@ -37,11 +37,9 @@ function clientCode(component: Component) {
 }
 
 const simple = new ConcreteComponent();
-console.log('%c%s', 'color: #ffa640', 'Client : I\'ve got a simple component');
 clientCode(simple);
 
 
 const decorator1 = new ConcreteDecoratorA(simple);
 const decorator2 = new ConcreteDecoratorB(decorator1);
-console.log('%c%s', 'color: #ffa640', 'Client : I\'ve got a simple component');
 clientCode(decorator2);
